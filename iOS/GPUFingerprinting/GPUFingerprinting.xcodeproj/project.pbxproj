@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F0E54AB21C2E02600A6A37B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0E54AA21C2E02600A6A37B /* Accelerate.framework */; };
+		6F0E54AE21C2E07500A6A37B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0E54AC21C2E07500A6A37B /* CoreImage.framework */; };
+		6F0E54AF21C2E07500A6A37B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0E54AD21C2E07500A6A37B /* CoreGraphics.framework */; };
+		6F0E54B421C2E19700A6A37B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0E54B021C2E19700A6A37B /* OpenGLES.framework */; };
+		6F0E54B521C2E19700A6A37B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0E54B121C2E19700A6A37B /* ImageIO.framework */; };
+		6F0E54B621C2E19700A6A37B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0E54B221C2E19700A6A37B /* QuartzCore.framework */; };
+		6F0E54B721C2E19700A6A37B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0E54B321C2E19700A6A37B /* GLKit.framework */; };
+		6F0E54B921C2E59800A6A37B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0E54B821C2E59800A6A37B /* WebKit.framework */; };
+		6F1C688A227CD2B000377E70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C6868227CD2AF00377E70 /* ViewController.swift */; };
+		6F1C688B227CD2B000377E70 /* ImageRenderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C686A227CD2AF00377E70 /* ImageRenderAPI.swift */; };
+		6F1C688C227CD2B000377E70 /* GLKitRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C686B227CD2AF00377E70 /* GLKitRenderer.swift */; };
+		6F1C688D227CD2B000377E70 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C686C227CD2AF00377E70 /* Vertex.swift */; };
+		6F1C688F227CD2B000377E70 /* Array+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C686F227CD2AF00377E70 /* Array+Size.swift */; };
+		6F1C6890227CD2B000377E70 /* UIDevice+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C6870227CD2AF00377E70 /* UIDevice+Model.swift */; };
+		6F1C689D227CD2B000377E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C687F227CD2AF00377E70 /* Assets.xcassets */; };
+		6F1C689E227CD2B000377E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C6880227CD2AF00377E70 /* LaunchScreen.storyboard */; };
+		6F1C689F227CD2B000377E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C6882227CD2AF00377E70 /* Main.storyboard */; };
+		6F1C68A0227CD2B000377E70 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C6885227CD2AF00377E70 /* Result.swift */; };
+		6F1C68A1227CD2B000377E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C6886227CD2AF00377E70 /* AppDelegate.swift */; };
+		6F1C68A2227CD2B000377E70 /* SendResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C6888227CD2AF00377E70 /* SendResultService.swift */; };
+		6FB60D5421C3FE0100CE8298 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB60D5321C3FE0100CE8298 /* Metal.framework */; };
+		A083624B4F9813950B8DEE48 /* Pods_GPUFingerprinting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09C18B73039D5AB88BEE931 /* Pods_GPUFingerprinting.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20A1C8AB353CC48DB9406456 /* Pods-ImageGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGenerator/Pods-ImageGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		370EC5F7756187D24ED60458 /* Pods-GPUFingerprinting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUFingerprinting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUFingerprinting/Pods-GPUFingerprinting.debug.xcconfig"; sourceTree = "<group>"; };
+		459A200E234F4C75154DE935 /* Pods-GPUFingerprinting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUFingerprinting.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUFingerprinting/Pods-GPUFingerprinting.release.xcconfig"; sourceTree = "<group>"; };
+		6F0E549421C2DFA400A6A37B /* GPUFingerprinting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUFingerprinting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0E54AA21C2E02600A6A37B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6F0E54AC21C2E07500A6A37B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		6F0E54AD21C2E07500A6A37B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F0E54B021C2E19700A6A37B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6F0E54B121C2E19700A6A37B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		6F0E54B221C2E19700A6A37B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6F0E54B321C2E19700A6A37B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		6F0E54B821C2E59800A6A37B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6F1C6868227CD2AF00377E70 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F1C686A227CD2AF00377E70 /* ImageRenderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRenderAPI.swift; sourceTree = "<group>"; };
+		6F1C686B227CD2AF00377E70 /* GLKitRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLKitRenderer.swift; sourceTree = "<group>"; };
+		6F1C686C227CD2AF00377E70 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		6F1C686F227CD2AF00377E70 /* Array+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Size.swift"; sourceTree = "<group>"; };
+		6F1C6870227CD2AF00377E70 /* UIDevice+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Model.swift"; sourceTree = "<group>"; };
+		6F1C687F227CD2AF00377E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F1C6881227CD2AF00377E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F1C6883227CD2AF00377E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F1C6885227CD2AF00377E70 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		6F1C6886227CD2AF00377E70 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F1C6888227CD2AF00377E70 /* SendResultService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendResultService.swift; sourceTree = "<group>"; };
+		6F1C6889227CD2AF00377E70 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FB60D5321C3FE0100CE8298 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		A09C18B73039D5AB88BEE931 /* Pods_GPUFingerprinting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPUFingerprinting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45D7A8F4443DA10775D5826 /* Pods-ImageGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGenerator/Pods-ImageGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F0E549121C2DFA400A6A37B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB60D5421C3FE0100CE8298 /* Metal.framework in Frameworks */,
+				6F0E54B921C2E59800A6A37B /* WebKit.framework in Frameworks */,
+				6F0E54B421C2E19700A6A37B /* OpenGLES.framework in Frameworks */,
+				6F0E54B521C2E19700A6A37B /* ImageIO.framework in Frameworks */,
+				6F0E54B621C2E19700A6A37B /* QuartzCore.framework in Frameworks */,
+				6F0E54B721C2E19700A6A37B /* GLKit.framework in Frameworks */,
+				6F0E54AE21C2E07500A6A37B /* CoreImage.framework in Frameworks */,
+				6F0E54AF21C2E07500A6A37B /* CoreGraphics.framework in Frameworks */,
+				6F0E54AB21C2E02600A6A37B /* Accelerate.framework in Frameworks */,
+				A083624B4F9813950B8DEE48 /* Pods_GPUFingerprinting.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F0E548B21C2DFA400A6A37B = {
+			isa = PBXGroup;
+			children = (
+				6F1C6867227CD2AF00377E70 /* GPUFingerprinting */,
+				6F0E549521C2DFA400A6A37B /* Products */,
+				6F0E54A921C2E02600A6A37B /* Frameworks */,
+				BAC0DAF0AFEAE3CDDDA7989C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6F0E549521C2DFA400A6A37B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F0E549421C2DFA400A6A37B /* GPUFingerprinting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F0E54A921C2E02600A6A37B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FB60D5321C3FE0100CE8298 /* Metal.framework */,
+				6F0E54B821C2E59800A6A37B /* WebKit.framework */,
+				6F0E54B321C2E19700A6A37B /* GLKit.framework */,
+				6F0E54B121C2E19700A6A37B /* ImageIO.framework */,
+				6F0E54B021C2E19700A6A37B /* OpenGLES.framework */,
+				6F0E54B221C2E19700A6A37B /* QuartzCore.framework */,
+				6F0E54AD21C2E07500A6A37B /* CoreGraphics.framework */,
+				6F0E54AC21C2E07500A6A37B /* CoreImage.framework */,
+				6F0E54AA21C2E02600A6A37B /* Accelerate.framework */,
+				A09C18B73039D5AB88BEE931 /* Pods_GPUFingerprinting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F1C6867227CD2AF00377E70 /* GPUFingerprinting */ = {
+			isa = PBXGroup;
+			children = (
+				6F1C6868227CD2AF00377E70 /* ViewController.swift */,
+				6F1C6869227CD2AF00377E70 /* Renderer */,
+				6F1C686D227CD2AF00377E70 /* Extension */,
+				6F1C687F227CD2AF00377E70 /* Assets.xcassets */,
+				6F1C6880227CD2AF00377E70 /* LaunchScreen.storyboard */,
+				6F1C6882227CD2AF00377E70 /* Main.storyboard */,
+				6F1C6884227CD2AF00377E70 /* Model */,
+				6F1C6886227CD2AF00377E70 /* AppDelegate.swift */,
+				6F1C6887227CD2AF00377E70 /* Service */,
+				6F1C6889227CD2AF00377E70 /* Info.plist */,
+			);
+			path = GPUFingerprinting;
+			sourceTree = "<group>";
+		};
+		6F1C6869227CD2AF00377E70 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				6F1C686A227CD2AF00377E70 /* ImageRenderAPI.swift */,
+				6F1C686B227CD2AF00377E70 /* GLKitRenderer.swift */,
+				6F1C686C227CD2AF00377E70 /* Vertex.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		6F1C686D227CD2AF00377E70 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6F1C686F227CD2AF00377E70 /* Array+Size.swift */,
+				6F1C6870227CD2AF00377E70 /* UIDevice+Model.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6F1C6884227CD2AF00377E70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F1C6885227CD2AF00377E70 /* Result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F1C6887227CD2AF00377E70 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6F1C6888227CD2AF00377E70 /* SendResultService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BAC0DAF0AFEAE3CDDDA7989C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E45D7A8F4443DA10775D5826 /* Pods-ImageGenerator.debug.xcconfig */,
+				20A1C8AB353CC48DB9406456 /* Pods-ImageGenerator.release.xcconfig */,
+				370EC5F7756187D24ED60458 /* Pods-GPUFingerprinting.debug.xcconfig */,
+				459A200E234F4C75154DE935 /* Pods-GPUFingerprinting.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F0E549321C2DFA400A6A37B /* GPUFingerprinting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0E54A621C2DFAE00A6A37B /* Build configuration list for PBXNativeTarget "GPUFingerprinting" */;
+			buildPhases = (
+				8645524877E774A69CC9FE75 /* [CP] Check Pods Manifest.lock */,
+				6F0E549021C2DFA400A6A37B /* Sources */,
+				6F0E549121C2DFA400A6A37B /* Frameworks */,
+				6F0E549221C2DFA400A6A37B /* Resources */,
+				48C8FDCBEC53795661643A32 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPUFingerprinting;
+			productName = ImageGenerator;
+			productReference = 6F0E549421C2DFA400A6A37B /* GPUFingerprinting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F0E548C21C2DFA400A6A37B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Rodrigo Aparecido Morbach";
+				TargetAttributes = {
+					6F0E549321C2DFA400A6A37B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6F0E548F21C2DFA400A6A37B /* Build configuration list for PBXProject "GPUFingerprinting" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F0E548B21C2DFA400A6A37B;
+			productRefGroup = 6F0E549521C2DFA400A6A37B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F0E549321C2DFA400A6A37B /* GPUFingerprinting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F0E549221C2DFA400A6A37B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1C689F227CD2B000377E70 /* Main.storyboard in Resources */,
+				6F1C689E227CD2B000377E70 /* LaunchScreen.storyboard in Resources */,
+				6F1C689D227CD2B000377E70 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48C8FDCBEC53795661643A32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPUFingerprinting/Pods-GPUFingerprinting-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPUFingerprinting/Pods-GPUFingerprinting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8645524877E774A69CC9FE75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPUFingerprinting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F0E549021C2DFA400A6A37B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1C68A0227CD2B000377E70 /* Result.swift in Sources */,
+				6F1C688C227CD2B000377E70 /* GLKitRenderer.swift in Sources */,
+				6F1C688D227CD2B000377E70 /* Vertex.swift in Sources */,
+				6F1C688F227CD2B000377E70 /* Array+Size.swift in Sources */,
+				6F1C688B227CD2B000377E70 /* ImageRenderAPI.swift in Sources */,
+				6F1C688A227CD2B000377E70 /* ViewController.swift in Sources */,
+				6F1C68A2227CD2B000377E70 /* SendResultService.swift in Sources */,
+				6F1C68A1227CD2B000377E70 /* AppDelegate.swift in Sources */,
+				6F1C6890227CD2B000377E70 /* UIDevice+Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6F1C6880227CD2AF00377E70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1C6881227CD2AF00377E70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6F1C6882227CD2AF00377E70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1C6883227CD2AF00377E70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F0E54A421C2DFAE00A6A37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F0E54A521C2DFAE00A6A37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F0E54A721C2DFAE00A6A37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 370EC5F7756187D24ED60458 /* Pods-GPUFingerprinting.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GPUFingerprinting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.GPUFingerprinting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F0E54A821C2DFAE00A6A37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459A200E234F4C75154DE935 /* Pods-GPUFingerprinting.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GPUFingerprinting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.GPUFingerprinting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F0E548F21C2DFA400A6A37B /* Build configuration list for PBXProject "GPUFingerprinting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0E54A421C2DFAE00A6A37B /* Debug */,
+				6F0E54A521C2DFAE00A6A37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0E54A621C2DFAE00A6A37B /* Build configuration list for PBXNativeTarget "GPUFingerprinting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0E54A721C2DFAE00A6A37B /* Debug */,
+				6F0E54A821C2DFAE00A6A37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F0E548C21C2DFA400A6A37B /* Project object */;
+}
